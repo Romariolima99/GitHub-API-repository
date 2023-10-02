@@ -15,4 +15,4 @@ Este é um projeto simples que consome a API do GitHub para exibir informações
    https://github.com/Romariolima99/GitHub-API-repository.git
 
 
-<img src="https://i.imgur.com/41ZaFOI.png" alt="GIF" data-canonical-src="https://i.imgur.com/STbojWw.png" style="max-width: 50%;">
+<img src="https://i.imgur.com/STbojWw.png" alt="GIF" data-canonical-src="https://i.imgur.com/STbojWw.png" style="max-width: 50%;">
