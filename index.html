@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
-    <title>API GITHUB</title>
+    <title>API Github</title>
 </head>
 <body>
     <h1>GITHUB API</h1>
-    <main class="content-main"></main>
-    
+
+    <div class="textfield">
+        <label for="User"></label> 
+        <input type="text" id="User" placeholder="Informe seu Usuario" />
+        <button id="btn" class="btn-consultar" onclick="getApiGitHub()">Consultar</button>
+        <button id="btn-2" class="btn-limpar" ondblclick="handleClick()" onclick="limpar()">Limpar</button>
+    </div>
+
+    <main id="limpar" class="content-main"></main>
+   
 </body>
 </html>

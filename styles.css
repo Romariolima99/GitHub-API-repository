@@ -1,8 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap');
+
+
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Roboto', sans-serif;
 
 }
 
@@ -72,13 +76,88 @@ color: #8b949e;
     
  }
 
+  /*estilização dos botôes*/
+
+.textfield{
+   width: 100%;
+   padding: 5px 5px;
+   display: inline-block;
+   border: 0;
+   border-bottom: 1px solid #272262;
+   background-color: transparent;
+   outline: none;
+   min-width: 180px;
+   font-size: 16px;
+   transition: all 3s ease-out;
+   border-radius: 0;
+   text-align: center;
+   display: block;
+   
+}
+
+#User{
+   width: 15%;
+   height: 50px;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 5px;
+
+}
+
+.btn-limpar{
+   border-color: #eb0303;
+   width: 8%;
+   height: 50px;
+   border-radius: 5px;
+   color: #f8f0f0;
+   box-shadow: 0 0 40px 40px #eb0303 inset, 0 0 0 0 #eb0303;
+   -webkit-transition: all 150ms ease-in-out;
+   transition: all 150ms ease-in-out;
+   font-weight: bold;
+   font-size: 15px
+}
+
+.btn-limpar:hover {
+   box-shadow: 0 0 10px 0 #df0606 inset, 0 0 10px 4px #eb0303;
+   color: #121111;
+ }
+
+
+.btn-consultar {
+   border-color: #3498db;
+   width: 8%;
+   height: 50px;
+   border-radius: 5px;
+   color: #fdfafa;
+   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+   -webkit-transition: all 150ms ease-in-out;
+   transition: all 150ms ease-in-out;
+   font-weight: bold;
+   font-size: 15px
+ }
+ .btn-consultar:hover {
+   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+   color: #121111;
+ }
+
 
  /*Importante treinar as medias query*/
  @media(min-width:320px) and (max-width:459px) {
-   .content-main .project .language .date-create .circle .title{
+   .content-main .project .date-create .circle .title{
        border-radius: 10px 60px;
        width: 100%;
        text-align: justify;
+      
+   }
+}
+
+/*Importante treinar as medias query*/
+@media(min-width:320px) and (max-width:459px) {
+   .language{
+      font-size: 11px;
+      padding: 10px;
    }
 }
 
@@ -86,6 +165,27 @@ color: #8b949e;
    #url{
       font-size: 11px;
       text-align: justify;
+   }
+}
+
+@media(min-width:320px) and (max-width:459px) {
+   #btn  {
+      width: 20%;
+      font-size: 11px;
+   }
+}
+
+@media(min-width:320px) and (max-width:459px) {
+   #btn-2 {
+      width: 20%;
+      font-size: 11px;
+   }
+}
+
+@media(min-width:320px) and (max-width:459px) {
+   #User {
+      width: 25%;
+      font-size: 11px;
    }
 }
 
