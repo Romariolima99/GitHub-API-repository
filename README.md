@@ -3,7 +3,7 @@ Este é um projeto simples que consome a API do GitHub para exibir informações
 
 ## Funcionalidades
 
-- Pesquisa e exibição de informações de repositórios do GitHub.
+- Exibição de informações de repositórios do GitHub.
 - Exibição de detalhes, como nome do repositório, link do projeto e linguagem.
 - Links diretos para o repositório no GitHub.
 
