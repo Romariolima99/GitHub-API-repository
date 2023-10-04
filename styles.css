@@ -143,7 +143,7 @@ color: #8b949e;
  }
 
 
- /*Importante treinar as medias query*/
+ /*Media Queries de responsividade CSS*/
  @media(min-width:320px) and (max-width:459px) {
    .content-main .project .date-create .circle .title{
        border-radius: 10px 60px;
@@ -153,7 +153,6 @@ color: #8b949e;
    }
 }
 
-/*Importante treinar as medias query*/
 @media(min-width:320px) and (max-width:459px) {
    .language{
       font-size: 11px;
