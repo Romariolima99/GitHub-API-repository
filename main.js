@@ -25,17 +25,17 @@ function getApiGitHub(){
     if(item?.language?.length > 0){
       let project = document.createElement('div');
 
-      project.innerHTML = `
-  
-      <div class="project">
+      project.innerHTML = 
+      `
+    <div class="project">
       <div>
-    <h4 class="title">${item.name}</h4>
-    <span class="date-create">${Intl.DateTimeFormat('pt-br').format (new Date(item.created_at)) }</span>
+        <h4 class="title">${item.name}</h4>
+         <span class="date-create">${Intl.DateTimeFormat('pt-br').format (new Date(item.created_at)) }</span>
       </div>
-        <div>
+   <div>
       <a id="url" href="${item.html_url}" target="_blank">${item.html_url}</a>
       <span class="language"><span class="circle"></span>${item.language}</span>
-  </div>
+    </div>
   </div> 
   `
     repositories.appendChild(project);  

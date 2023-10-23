@@ -143,54 +143,62 @@ color: #8b949e;
  }
 
 
- /*Media Queries de responsividade CSS*/
- @media(min-width:320px) and (max-width:459px) {
-   .content-main .project .date-create .circle .title{
-       border-radius: 10px 60px;
-       width: 100%;
-       text-align: justify;
+@media(min-width:320px) and (max-width:900px) {
+   .language  {
+      font-size:12px;
       
    }
 }
 
-@media(min-width:320px) and (max-width:459px) {
-   .language{
-      font-size: 11px;
+@media(min-width:320px) and (max-width:900px) {
+   .circle  {
+      font-size:10px;
+      
+   }
+}
+@media(min-width:320px) and (max-width:900px) {
+   .title  {
       padding: 10px;
+      
    }
 }
 
-@media(min-width:320px) and (max-width:459px) {
+
+@media(min-width:320px) and (max-width:900px) {
+   .content-main .project div{
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+   }
+}
+
+@media(min-width:320px) and (max-width:900px) {
    #url{
-      font-size: 11px;
+      font-size: 12px;
       text-align: justify;
+      padding: 5px 5px;
    }
 }
 
-@media(min-width:320px) and (max-width:459px) {
+  @media(min-width:320px) and (max-width:900px) {
    #btn  {
       width: 20%;
       font-size: 11px;
    }
 }
 
-@media(min-width:320px) and (max-width:459px) {
+@media(min-width:320px) and (max-width:900px) {
    #btn-2 {
       width: 20%;
       font-size: 11px;
    }
-}
+} 
 
-@media(min-width:320px) and (max-width:459px) {
+@media(min-width:320px) and (max-width:900px) {
    #User {
       width: 25%;
       font-size: 11px;
    }
 }
 
-
-   @media  (min-width:320px) and (max-width:459px) {
-      .date-create {
-         padding-left: 5px;
-         padding-right: 5px;
-     }}
