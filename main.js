@@ -8,7 +8,7 @@ function getApiGitHub(){
   fetch(`https://api.github.com/users/${User}/repos`)
   .then(async res => {
   if ( !res.ok){
-    alert("Usuario não encontrado")
+    toggleDiv(), setInterval(hideDiv, 5000);
       throw new Error(res.status);
       
   }
@@ -59,4 +59,14 @@ function limpar (){
 
 
 
-//getApiGitHub();
+function toggleDiv ()  {
+  var show = document.getElementById("alert");
+  show.style.display = "block";
+  
+    }
+  
+    function hideDiv ()  {
+      var hide = document.getElementById("alert");
+      hide.style.display = "none";
+    
+        }

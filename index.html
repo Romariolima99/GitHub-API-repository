@@ -13,9 +13,17 @@
     <div class="textfield">
         <label for="User"></label> 
         <input type="text" id="User" placeholder="Informe seu Usuario" />
-        <button id="btn" class="btn-consultar" onclick="getApiGitHub()">Consultar</button>
-        <button id="btn-2" class="btn-limpar" ondblclick="handleClick()" onclick="limpar()">Limpar</button>
+        <button id="btn" class="btn-consultar" onclick="getApiGitHub()" >Consultar</button>
+        <button id="btn-2" class="btn-limpar"  onclick="limpar()">Limpar</button>
     </div>
+
+    <div id="alert" class="alert">
+        <span class="closebtn"></span>  
+        <strong> Usuario não encontrado </strong> 
+        <button onchange="toggleDiv()"></button>
+    </div>
+
+  
 
     <main id="limpar" class="content-main"></main>
    
