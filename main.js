@@ -8,15 +8,19 @@ function getApiGitHub(){
   fetch(`https://api.github.com/users/${User}/repos`)
   .then(async res => {
   if ( !res.ok){
-    toggleDiv(), setInterval(hideDiv, 5000);
+    toggleDiv(), setTimeout(() => { 
+      hideDiv()
+    }, 3000);
       throw new Error(res.status);
-      
+      // chama a função apos 3 e segundos
   }
 
   let data = await res.json();
 
   if( !data || data.length <= 0 ){
-    toggleDivRepositories(), setInterval(hideDivRepositories, 5000);
+    toggleDivRepositories(), setTimeout(() => {
+      hideDivRepositories()
+    }, 3000);
     return;
   }
 
