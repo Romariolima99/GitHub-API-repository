@@ -16,7 +16,7 @@ function getApiGitHub(){
   let data = await res.json();
 
   if( !data || data.length <= 0 ){
-    alert("repositorios não encontrados");
+    toggleDivRepositories(), setInterval(hideDivRepositories, 5000);
     return;
   }
 
@@ -58,7 +58,7 @@ function limpar (){
   });
 
 
-
+//função para usuario não encontrado
 function toggleDiv ()  {
   var show = document.getElementById("alert");
   show.style.display = "block";
@@ -67,6 +67,20 @@ function toggleDiv ()  {
   
     function hideDiv ()  {
       var hide = document.getElementById("alert");
+      hide.style.display = "none";
+    
+        }
+
+
+    //função para repositorios não encontrado
+function toggleDivRepositories ()  {
+  var show = document.getElementById("alert-repositories");
+  show.style.display = "block";
+  
+    }
+  
+    function hideDivRepositories ()  {
+      var hide = document.getElementById("alert-repositories");
       hide.style.display = "none";
     
         }

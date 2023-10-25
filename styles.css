@@ -142,11 +142,27 @@ color: #8b949e;
    color: #121111;
  }
 
-/* mensagem de alerta */
+/* estilização dos alertas */
 
 .alert {
    padding: 20px;
    background-color: #f44336;
+   color: white;
+   opacity: 1;
+   transition: opacity 0.6s;
+   margin-bottom: 15px;
+   display: none;
+   transition: opacity 0.5s;
+   width:30%;
+   border-radius: 10px;
+
+ }
+
+/* estilização dos alertas*/
+
+ .alert-repositorios {
+   padding: 20px;
+   background-color: #DAA520;
    color: white;
    opacity: 1;
    transition: opacity 0.6s;
@@ -169,7 +185,14 @@ color: #8b949e;
 }
 
 @media(min-width:320px) and (max-width:900px) {
-   .alert  {
+   .alert {
+      width: 100%;
+      
+   }
+}
+
+@media(min-width:320px) and (max-width:900px) {
+   .alert-repositorios {
       width: 100%;
       
    }
